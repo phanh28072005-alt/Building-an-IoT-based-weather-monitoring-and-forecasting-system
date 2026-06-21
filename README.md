@@ -22,7 +22,7 @@ Lưu đồ thể hiện chu trình hoạt động khép kín của trạm, từ 
 ### 3. Hình ảnh sản phẩm thực tế
 Hình ảnh mô hình trạm vật lý thu nhỏ hoàn thiện sau khi đã tích hợp phần cứng, các module cảm biến khí tượng, mạch chuyển đổi mức logic và hệ thống hiển thị trực quan.
 
-![Hình ảnh sản phẩm thực tế](sanpham.png)
+![Hình ảnh sản phẩm thực tế](sanpham.jpg)
 
 ---
 
