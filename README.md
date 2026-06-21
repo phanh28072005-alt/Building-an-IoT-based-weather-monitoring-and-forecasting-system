@@ -78,9 +78,13 @@ Hệ thống thư viện và trình điều khiển được tối ưu hóa tố
 - **Giới hạn thuật toán:** Chỉ tập trung phân tích sâu vào thuật toán hồi quy tuyến tính có kiểm soát thành phần phạt là **Hồi quy Ridge (L2 Regularization)** để khắc phục hiện tượng đa cộng tuyến, không mở rộng sang các kiến trúc học sâu phức tạp khác nhằm bảo toàn tài nguyên tính toán của hệ thống nhúng.
 
 ### Hướng phát triển
-- Tích hợp thêm các cảm biến khí tượng chuyên dụng khác (đo chỉ số UV, bụi mịn PM2.5).
-- Mở rộng hệ thống Web Server trên Cloud để trực quan hóa biểu đồ lịch sử khí tượng theo thời gian thực một cách toàn diện hơn.
-
+- Tích hợp các cảm biến chức năng vào hệ thống: Sử dụng cảm biến BME280 thay cho DHT11 để đo tích hợp nhiệt độ, độ ẩm, áp suất không khí, cảm biến ánh sáng (LDR) để giúp hệ thống nhận biết ngày/đêm, module cảm biến Neopixel 12 LED RGB để cung cấp ánh sáng cho hệ thống khi trời tối, thêm button để bật/tắt, tiết kiệm năng lượng cho hệ thống, tích hợp thêm tấm pin năng lượng mặt trời thay cho nguồn pin vào ban ngày,...
+	
+- Nâng cấp thuật toán dự báo và xử lý dữ liệu: Tiến hành thu thập tập dữ liệu trong nhiều năm hơn để làm phong phú dữ liệu. Nghiên cứu tích hợp các kỹ thuật chuẩn hóa nâng cao hoặc sử dụng các phương pháp học máy khác có độ phức tạp và chính xác cao hơn như Decision Tree/Random Forest nhằm tăng năng lực dự báo trong điều kiện thời tiết biến động cực đoan.
+	
+- Tối ưu hóa và năng lượng phần cứng: Nghiên cứu áp dụng các chế độ tiết kiệm năng lượng sâu trên cả chip ATmega328P và ESP32 khi trạm ở trạng thái chờ nhằm kéo dài tuổi thọ của hệ thống pin 18650. Tích hợp thêm mạch sạc năng lượng mặt trời để biến trạm thành một hệ thống tự cung cấp năng lượng độc lập hoàn toàn ngoài thực địa.
+	
+- Mở rộng giao diện và quy mô mạng lưới: Xây dựng giao diện biểu diễn đồ thị trực quan sinh động hơn trên nền tảng Web hoặc ứng dụng di động để người dùng dễ dàng theo dõi từ xa. Đồng thời, phát triển mô hình kết nối mạng lưới nhiều trạm nhằm thu thập dữ liệu đồng thời tại nhiều tọa độ khác nhau, phục vụ cho bài toán phân tích bản đồ thời tiết số hóa.
 ---
 
 ## 🚀 Cài đặt và chạy dự án
